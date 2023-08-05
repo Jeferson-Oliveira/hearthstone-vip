@@ -27,6 +27,7 @@
 		41E175762A7EE3600037B92C /* CardsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175752A7EE3600037B92C /* CardsListPresenter.swift */; };
 		41E175782A7EEAFC0037B92C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175772A7EEAFC0037B92C /* BaseViewController.swift */; };
 		41E1757A2A7EF5690037B92C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175792A7EF5690037B92C /* UIView+Extension.swift */; };
+		41E175812A7F0E750037B92C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41E1757F2A7F0E750037B92C /* Localizable.strings */; };
 		879B966CD2A6D6AD6DEF7D3E /* Pods_JefersonHearthstone_JefersonHearthstoneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA089AB3BA6311BFC6A4D40 /* Pods_JefersonHearthstone_JefersonHearthstoneUITests.framework */; };
 		ECB5CB0307BFD39807CCCE55 /* Pods_JefersonHearthstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A3BAB12FFFA217295A33D6 /* Pods_JefersonHearthstone.framework */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,9 @@
 		41E175752A7EE3600037B92C /* CardsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListPresenter.swift; sourceTree = "<group>"; };
 		41E175772A7EEAFC0037B92C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		41E175792A7EF5690037B92C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		41E175802A7F0E750037B92C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = JefersonHearthstone/Base.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		41E175822A7F0E850037B92C /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "../pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		41E175832A7F0EA60037B92C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ../en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9071A3634B57308CF4BA6FA4 /* Pods-JefersonHearthstone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JefersonHearthstone.release.xcconfig"; path = "Target Support Files/Pods-JefersonHearthstone/Pods-JefersonHearthstone.release.xcconfig"; sourceTree = "<group>"; };
 		94B8EE4A1922C4C629CE467D /* Pods-JefersonHearthstone-JefersonHearthstoneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JefersonHearthstone-JefersonHearthstoneUITests.debug.xcconfig"; path = "Target Support Files/Pods-JefersonHearthstone-JefersonHearthstoneUITests/Pods-JefersonHearthstone-JefersonHearthstoneUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9BDE30EFB5D3BF6611A4FF50 /* Pods-JefersonHearthstone-JefersonHearthstoneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JefersonHearthstone-JefersonHearthstoneUITests.release.xcconfig"; path = "Target Support Files/Pods-JefersonHearthstone-JefersonHearthstoneUITests/Pods-JefersonHearthstone-JefersonHearthstoneUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,7 +143,6 @@
 				41E175592A7EC29A0037B92C /* Domain */,
 				41E175292A7EC2890037B92C /* AppDelegate.swift */,
 				41E1752B2A7EC2890037B92C /* SceneDelegate.swift */,
-				41E175322A7EC28C0037B92C /* Assets.xcassets */,
 				41E175342A7EC28C0037B92C /* LaunchScreen.storyboard */,
 				41E175372A7EC28C0037B92C /* Info.plist */,
 			);
@@ -167,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				41E1755A2A7EC2B20037B92C /* HearthstoneCards */,
+				41E1757F2A7F0E750037B92C /* Localizable.strings */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -231,6 +235,7 @@
 		41E175622A7EC7A50037B92C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				41E1757B2A7F0CC50037B92C /* SupportingFiles */,
 				41E175632A7EC7AE0037B92C /* Extension */,
 				41E175772A7EEAFC0037B92C /* BaseViewController.swift */,
 			);
@@ -244,6 +249,14 @@
 				41E175792A7EF5690037B92C /* UIView+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		41E1757B2A7F0CC50037B92C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				41E175322A7EC28C0037B92C /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		543575B9AA42E35509C53366 /* Frameworks */ = {
@@ -356,11 +369,12 @@
 			};
 			buildConfigurationList = 41E175212A7EC2890037B92C /* Build configuration list for PBXProject "JefersonHearthstone" */;
 			compatibilityVersion = "Xcode 13.0";
-			developmentRegion = en;
+			developmentRegion = "pt-BR";
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				"pt-BR",
+				en,
 			);
 			mainGroup = 41E1751D2A7EC2890037B92C;
 			productRefGroup = 41E175272A7EC2890037B92C /* Products */;
@@ -380,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41E175362A7EC28C0037B92C /* LaunchScreen.storyboard in Resources */,
+				41E175812A7F0E750037B92C /* Localizable.strings in Resources */,
 				41E175332A7EC28C0037B92C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,6 +598,16 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		41E1757F2A7F0E750037B92C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41E175802A7F0E750037B92C /* Base */,
+				41E175822A7F0E850037B92C /* pt-BR */,
+				41E175832A7F0EA60037B92C /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -590,6 +615,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -636,7 +662,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -650,6 +676,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -690,7 +717,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

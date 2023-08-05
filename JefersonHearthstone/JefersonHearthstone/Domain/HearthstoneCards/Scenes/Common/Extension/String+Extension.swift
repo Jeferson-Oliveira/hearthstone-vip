@@ -11,6 +11,6 @@ extension String {
     static let empty = ""
     
     func localizable() -> String? {
-        return self
+        return NSLocalizedString(self, comment: self)
     }
 }

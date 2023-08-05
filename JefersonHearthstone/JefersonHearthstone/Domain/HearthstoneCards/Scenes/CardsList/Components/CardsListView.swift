@@ -32,7 +32,7 @@ class CardsListView: UIView {
         let searchBar = UISearchBar()
         searchBar.translatesAutoresizingMaskIntoConstraints = false
         searchBar.barStyle = .black
-        searchBar.prompt = "Hearth Stone Cards".localizable()
+        searchBar.prompt = "hearth_stone_cards".localizable()
         searchBar.searchBarStyle = .minimal
         searchBar.placeholder = "search".localizable()
         searchBar.showsCancelButton = true
