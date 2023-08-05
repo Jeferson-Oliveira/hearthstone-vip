@@ -1,0 +1,51 @@
+PODS:
+  - Alamofire (5.4.4)
+  - iOSSnapshotTestCase (6.2.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 6.2.0)
+  - iOSSnapshotTestCase/Core (6.2.0)
+  - iOSSnapshotTestCase/SwiftSupport (6.2.0):
+    - iOSSnapshotTestCase/Core
+  - Kingfisher (6.1.1)
+  - Mockingjay (3.0.0-alpha.1):
+    - Mockingjay/Core (= 3.0.0-alpha.1)
+    - Mockingjay/XCTest (= 3.0.0-alpha.1)
+  - Mockingjay/Core (3.0.0-alpha.1):
+    - URITemplate (~> 3.0)
+  - Mockingjay/XCTest (3.0.0-alpha.1):
+    - Mockingjay/Core
+  - Nimble (9.2.1)
+  - Nimble-Snapshots (9.0.0):
+    - Nimble-Snapshots/Core (= 9.0.0)
+  - Nimble-Snapshots/Core (9.0.0):
+    - iOSSnapshotTestCase (~> 6.0)
+    - Nimble
+  - URITemplate (3.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.4.2)
+  - Kingfisher (~> 6.1.1)
+  - Mockingjay (~> 3.0.0-alpha.1)
+  - Nimble-Snapshots (~> 9.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - iOSSnapshotTestCase
+    - Kingfisher
+    - Mockingjay
+    - Nimble
+    - Nimble-Snapshots
+    - URITemplate
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  iOSSnapshotTestCase: 9ab44cb5aa62b84d31847f40680112e15ec579a6
+  Kingfisher: 676d63307fbef6ed5d5ed400bff36983480d7500
+  Mockingjay: 0f7c5aa49c7f1b95621cee3c79b557141f5a225c
+  Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
+  Nimble-Snapshots: 36b027fd637b3e405ddc8362203d9dad3f5405fd
+  URITemplate: 5f5a79f3e384884102c4e6b3325d159c20a8035a
+
+PODFILE CHECKSUM: ad43ad597fe9f7704900dc8c1b12dc78aafc3f5c
+
+COCOAPODS: 1.12.1

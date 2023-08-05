@@ -1,0 +1,879 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F5289726E0A96EF68F7AF9B /* Pods_JefersonHearthstoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A6AE79CA1E4F23AACDC3D5 /* Pods_JefersonHearthstoneTests.framework */; };
+		41E1752A2A7EC2890037B92C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175292A7EC2890037B92C /* AppDelegate.swift */; };
+		41E1752C2A7EC2890037B92C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E1752B2A7EC2890037B92C /* SceneDelegate.swift */; };
+		41E175332A7EC28C0037B92C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E175322A7EC28C0037B92C /* Assets.xcassets */; };
+		41E175362A7EC28C0037B92C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E175342A7EC28C0037B92C /* LaunchScreen.storyboard */; };
+		41E175412A7EC28C0037B92C /* JefersonHearthstoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175402A7EC28C0037B92C /* JefersonHearthstoneTests.swift */; };
+		41E1754B2A7EC28C0037B92C /* JefersonHearthstoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E1754A2A7EC28C0037B92C /* JefersonHearthstoneUITests.swift */; };
+		41E1754D2A7EC28C0037B92C /* JefersonHearthstoneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E1754C2A7EC28C0037B92C /* JefersonHearthstoneUITestsLaunchTests.swift */; };
+		41E175612A7EC4460037B92C /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175602A7EC4460037B92C /* CardCollectionViewCell.swift */; };
+		41E175652A7EC7BF0037B92C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175642A7EC7BF0037B92C /* String+Extension.swift */; };
+		41E175672A7EC88D0037B92C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175662A7EC88D0037B92C /* Card.swift */; };
+		41E175692A7ECCC50037B92C /* CardsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175682A7ECCC50037B92C /* CardsListView.swift */; };
+		41E1756C2A7ECFD00037B92C /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E1756B2A7ECFD00037B92C /* Endpoints.swift */; };
+		41E1756E2A7ED1E30037B92C /* HttpRestWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E1756D2A7ED1E30037B92C /* HttpRestWorker.swift */; };
+		41E175702A7EDF860037B92C /* ListCardsRequest+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E1756F2A7EDF860037B92C /* ListCardsRequest+Response.swift */; };
+		41E175722A7EE2380037B92C /* CardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175712A7EE2380037B92C /* CardListViewController.swift */; };
+		41E175742A7EE2770037B92C /* CardListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175732A7EE2770037B92C /* CardListInteractor.swift */; };
+		41E175762A7EE3600037B92C /* CardsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175752A7EE3600037B92C /* CardsListPresenter.swift */; };
+		41E175782A7EEAFC0037B92C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175772A7EEAFC0037B92C /* BaseViewController.swift */; };
+		41E1757A2A7EF5690037B92C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175792A7EF5690037B92C /* UIView+Extension.swift */; };
+		879B966CD2A6D6AD6DEF7D3E /* Pods_JefersonHearthstone_JefersonHearthstoneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA089AB3BA6311BFC6A4D40 /* Pods_JefersonHearthstone_JefersonHearthstoneUITests.framework */; };
+		ECB5CB0307BFD39807CCCE55 /* Pods_JefersonHearthstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A3BAB12FFFA217295A33D6 /* Pods_JefersonHearthstone.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41E1753D2A7EC28C0037B92C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41E1751E2A7EC2890037B92C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41E175252A7EC2890037B92C;
+			remoteInfo = JefersonHearthstone;
+		};
+		41E175472A7EC28C0037B92C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41E1751E2A7EC2890037B92C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41E175252A7EC2890037B92C;
+			remoteInfo = JefersonHearthstone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089F8144825F0BEDB38058DA /* Pods-JefersonHearthstone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JefersonHearthstone.debug.xcconfig"; path = "Target Support Files/Pods-JefersonHearthstone/Pods-JefersonHearthstone.debug.xcconfig"; sourceTree = "<group>"; };
+		0EA089AB3BA6311BFC6A4D40 /* Pods_JefersonHearthstone_JefersonHearthstoneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JefersonHearthstone_JefersonHearthstoneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27064EE4CD146ADCA519D4B0 /* Pods-JefersonHearthstoneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JefersonHearthstoneTests.debug.xcconfig"; path = "Target Support Files/Pods-JefersonHearthstoneTests/Pods-JefersonHearthstoneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		41E175262A7EC2890037B92C /* JefersonHearthstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JefersonHearthstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E175292A7EC2890037B92C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41E1752B2A7EC2890037B92C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		41E175322A7EC28C0037B92C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41E175352A7EC28C0037B92C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41E175372A7EC28C0037B92C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41E1753C2A7EC28C0037B92C /* JefersonHearthstoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JefersonHearthstoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E175402A7EC28C0037B92C /* JefersonHearthstoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JefersonHearthstoneTests.swift; sourceTree = "<group>"; };
+		41E175462A7EC28C0037B92C /* JefersonHearthstoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JefersonHearthstoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E1754A2A7EC28C0037B92C /* JefersonHearthstoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JefersonHearthstoneUITests.swift; sourceTree = "<group>"; };
+		41E1754C2A7EC28C0037B92C /* JefersonHearthstoneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JefersonHearthstoneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		41E175602A7EC4460037B92C /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		41E175642A7EC7BF0037B92C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		41E175662A7EC88D0037B92C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		41E175682A7ECCC50037B92C /* CardsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListView.swift; sourceTree = "<group>"; };
+		41E1756B2A7ECFD00037B92C /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		41E1756D2A7ED1E30037B92C /* HttpRestWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRestWorker.swift; sourceTree = "<group>"; };
+		41E1756F2A7EDF860037B92C /* ListCardsRequest+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListCardsRequest+Response.swift"; sourceTree = "<group>"; };
+		41E175712A7EE2380037B92C /* CardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewController.swift; sourceTree = "<group>"; };
+		41E175732A7EE2770037B92C /* CardListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListInteractor.swift; sourceTree = "<group>"; };
+		41E175752A7EE3600037B92C /* CardsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListPresenter.swift; sourceTree = "<group>"; };
+		41E175772A7EEAFC0037B92C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		41E175792A7EF5690037B92C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		9071A3634B57308CF4BA6FA4 /* Pods-JefersonHearthstone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JefersonHearthstone.release.xcconfig"; path = "Target Support Files/Pods-JefersonHearthstone/Pods-JefersonHearthstone.release.xcconfig"; sourceTree = "<group>"; };
+		94B8EE4A1922C4C629CE467D /* Pods-JefersonHearthstone-JefersonHearthstoneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JefersonHearthstone-JefersonHearthstoneUITests.debug.xcconfig"; path = "Target Support Files/Pods-JefersonHearthstone-JefersonHearthstoneUITests/Pods-JefersonHearthstone-JefersonHearthstoneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BDE30EFB5D3BF6611A4FF50 /* Pods-JefersonHearthstone-JefersonHearthstoneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JefersonHearthstone-JefersonHearthstoneUITests.release.xcconfig"; path = "Target Support Files/Pods-JefersonHearthstone-JefersonHearthstoneUITests/Pods-JefersonHearthstone-JefersonHearthstoneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B89A3B110FBEA03696F40508 /* Pods-JefersonHearthstoneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JefersonHearthstoneTests.release.xcconfig"; path = "Target Support Files/Pods-JefersonHearthstoneTests/Pods-JefersonHearthstoneTests.release.xcconfig"; sourceTree = "<group>"; };
+		C3A3BAB12FFFA217295A33D6 /* Pods_JefersonHearthstone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JefersonHearthstone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A6AE79CA1E4F23AACDC3D5 /* Pods_JefersonHearthstoneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JefersonHearthstoneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41E175232A7EC2890037B92C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECB5CB0307BFD39807CCCE55 /* Pods_JefersonHearthstone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E175392A7EC28C0037B92C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F5289726E0A96EF68F7AF9B /* Pods_JefersonHearthstoneTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E175432A7EC28C0037B92C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				879B966CD2A6D6AD6DEF7D3E /* Pods_JefersonHearthstone_JefersonHearthstoneUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41E1751D2A7EC2890037B92C = {
+			isa = PBXGroup;
+			children = (
+				41E175282A7EC2890037B92C /* JefersonHearthstone */,
+				41E1753F2A7EC28C0037B92C /* JefersonHearthstoneTests */,
+				41E175492A7EC28C0037B92C /* JefersonHearthstoneUITests */,
+				41E175272A7EC2890037B92C /* Products */,
+				DBBE5AE3CFDDCDE53FE8CE01 /* Pods */,
+				543575B9AA42E35509C53366 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		41E175272A7EC2890037B92C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41E175262A7EC2890037B92C /* JefersonHearthstone.app */,
+				41E1753C2A7EC28C0037B92C /* JefersonHearthstoneTests.xctest */,
+				41E175462A7EC28C0037B92C /* JefersonHearthstoneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41E175282A7EC2890037B92C /* JefersonHearthstone */ = {
+			isa = PBXGroup;
+			children = (
+				41E175592A7EC29A0037B92C /* Domain */,
+				41E175292A7EC2890037B92C /* AppDelegate.swift */,
+				41E1752B2A7EC2890037B92C /* SceneDelegate.swift */,
+				41E175322A7EC28C0037B92C /* Assets.xcassets */,
+				41E175342A7EC28C0037B92C /* LaunchScreen.storyboard */,
+				41E175372A7EC28C0037B92C /* Info.plist */,
+			);
+			path = JefersonHearthstone;
+			sourceTree = "<group>";
+		};
+		41E1753F2A7EC28C0037B92C /* JefersonHearthstoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				41E175402A7EC28C0037B92C /* JefersonHearthstoneTests.swift */,
+			);
+			path = JefersonHearthstoneTests;
+			sourceTree = "<group>";
+		};
+		41E175492A7EC28C0037B92C /* JefersonHearthstoneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				41E1754A2A7EC28C0037B92C /* JefersonHearthstoneUITests.swift */,
+				41E1754C2A7EC28C0037B92C /* JefersonHearthstoneUITestsLaunchTests.swift */,
+			);
+			path = JefersonHearthstoneUITests;
+			sourceTree = "<group>";
+		};
+		41E175592A7EC29A0037B92C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				41E1755A2A7EC2B20037B92C /* HearthstoneCards */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		41E1755A2A7EC2B20037B92C /* HearthstoneCards */ = {
+			isa = PBXGroup;
+			children = (
+				41E1755C2A7EC3D00037B92C /* Scenes */,
+				41E1755B2A7EC3C80037B92C /* Model */,
+			);
+			path = HearthstoneCards;
+			sourceTree = "<group>";
+		};
+		41E1755B2A7EC3C80037B92C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41E1756D2A7ED1E30037B92C /* HttpRestWorker.swift */,
+				41E175662A7EC88D0037B92C /* Card.swift */,
+				41E1756B2A7ECFD00037B92C /* Endpoints.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41E1755C2A7EC3D00037B92C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				41E175622A7EC7A50037B92C /* Common */,
+				41E1755E2A7EC3E30037B92C /* CardDetail */,
+				41E1755D2A7EC3DA0037B92C /* CardsList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		41E1755D2A7EC3DA0037B92C /* CardsList */ = {
+			isa = PBXGroup;
+			children = (
+				41E1755F2A7EC4120037B92C /* Components */,
+				41E1756F2A7EDF860037B92C /* ListCardsRequest+Response.swift */,
+			);
+			path = CardsList;
+			sourceTree = "<group>";
+		};
+		41E1755E2A7EC3E30037B92C /* CardDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CardDetail;
+			sourceTree = "<group>";
+		};
+		41E1755F2A7EC4120037B92C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				41E175602A7EC4460037B92C /* CardCollectionViewCell.swift */,
+				41E175682A7ECCC50037B92C /* CardsListView.swift */,
+				41E175712A7EE2380037B92C /* CardListViewController.swift */,
+				41E175732A7EE2770037B92C /* CardListInteractor.swift */,
+				41E175752A7EE3600037B92C /* CardsListPresenter.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		41E175622A7EC7A50037B92C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				41E175632A7EC7AE0037B92C /* Extension */,
+				41E175772A7EEAFC0037B92C /* BaseViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		41E175632A7EC7AE0037B92C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				41E175642A7EC7BF0037B92C /* String+Extension.swift */,
+				41E175792A7EF5690037B92C /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		543575B9AA42E35509C53366 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3A3BAB12FFFA217295A33D6 /* Pods_JefersonHearthstone.framework */,
+				D5A6AE79CA1E4F23AACDC3D5 /* Pods_JefersonHearthstoneTests.framework */,
+				0EA089AB3BA6311BFC6A4D40 /* Pods_JefersonHearthstone_JefersonHearthstoneUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBBE5AE3CFDDCDE53FE8CE01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				089F8144825F0BEDB38058DA /* Pods-JefersonHearthstone.debug.xcconfig */,
+				9071A3634B57308CF4BA6FA4 /* Pods-JefersonHearthstone.release.xcconfig */,
+				27064EE4CD146ADCA519D4B0 /* Pods-JefersonHearthstoneTests.debug.xcconfig */,
+				B89A3B110FBEA03696F40508 /* Pods-JefersonHearthstoneTests.release.xcconfig */,
+				94B8EE4A1922C4C629CE467D /* Pods-JefersonHearthstone-JefersonHearthstoneUITests.debug.xcconfig */,
+				9BDE30EFB5D3BF6611A4FF50 /* Pods-JefersonHearthstone-JefersonHearthstoneUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41E175252A7EC2890037B92C /* JefersonHearthstone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41E175502A7EC28C0037B92C /* Build configuration list for PBXNativeTarget "JefersonHearthstone" */;
+			buildPhases = (
+				89CEFF88E21BFD1BA1719865 /* [CP] Check Pods Manifest.lock */,
+				41E175222A7EC2890037B92C /* Sources */,
+				41E175232A7EC2890037B92C /* Frameworks */,
+				41E175242A7EC2890037B92C /* Resources */,
+				BE6356CF9DEA54A7F70F1ED8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JefersonHearthstone;
+			productName = JefersonHearthstone;
+			productReference = 41E175262A7EC2890037B92C /* JefersonHearthstone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41E1753B2A7EC28C0037B92C /* JefersonHearthstoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41E175532A7EC28C0037B92C /* Build configuration list for PBXNativeTarget "JefersonHearthstoneTests" */;
+			buildPhases = (
+				C73E50995EEF321A1C3A8D53 /* [CP] Check Pods Manifest.lock */,
+				41E175382A7EC28C0037B92C /* Sources */,
+				41E175392A7EC28C0037B92C /* Frameworks */,
+				41E1753A2A7EC28C0037B92C /* Resources */,
+				3AF5EC893CE56CB388596433 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41E1753E2A7EC28C0037B92C /* PBXTargetDependency */,
+			);
+			name = JefersonHearthstoneTests;
+			productName = JefersonHearthstoneTests;
+			productReference = 41E1753C2A7EC28C0037B92C /* JefersonHearthstoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		41E175452A7EC28C0037B92C /* JefersonHearthstoneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41E175562A7EC28C0037B92C /* Build configuration list for PBXNativeTarget "JefersonHearthstoneUITests" */;
+			buildPhases = (
+				F86C36BFE48DE3EBF5CF86A8 /* [CP] Check Pods Manifest.lock */,
+				41E175422A7EC28C0037B92C /* Sources */,
+				41E175432A7EC28C0037B92C /* Frameworks */,
+				41E175442A7EC28C0037B92C /* Resources */,
+				61BAAC720B880DEA64CAEC9F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41E175482A7EC28C0037B92C /* PBXTargetDependency */,
+			);
+			name = JefersonHearthstoneUITests;
+			productName = JefersonHearthstoneUITests;
+			productReference = 41E175462A7EC28C0037B92C /* JefersonHearthstoneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41E1751E2A7EC2890037B92C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					41E175252A7EC2890037B92C = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					41E1753B2A7EC28C0037B92C = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 41E175252A7EC2890037B92C;
+					};
+					41E175452A7EC28C0037B92C = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 41E175252A7EC2890037B92C;
+					};
+				};
+			};
+			buildConfigurationList = 41E175212A7EC2890037B92C /* Build configuration list for PBXProject "JefersonHearthstone" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41E1751D2A7EC2890037B92C;
+			productRefGroup = 41E175272A7EC2890037B92C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41E175252A7EC2890037B92C /* JefersonHearthstone */,
+				41E1753B2A7EC28C0037B92C /* JefersonHearthstoneTests */,
+				41E175452A7EC28C0037B92C /* JefersonHearthstoneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41E175242A7EC2890037B92C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41E175362A7EC28C0037B92C /* LaunchScreen.storyboard in Resources */,
+				41E175332A7EC28C0037B92C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E1753A2A7EC28C0037B92C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E175442A7EC28C0037B92C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AF5EC893CE56CB388596433 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JefersonHearthstoneTests/Pods-JefersonHearthstoneTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JefersonHearthstoneTests/Pods-JefersonHearthstoneTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JefersonHearthstoneTests/Pods-JefersonHearthstoneTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61BAAC720B880DEA64CAEC9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JefersonHearthstone-JefersonHearthstoneUITests/Pods-JefersonHearthstone-JefersonHearthstoneUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JefersonHearthstone-JefersonHearthstoneUITests/Pods-JefersonHearthstone-JefersonHearthstoneUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JefersonHearthstone-JefersonHearthstoneUITests/Pods-JefersonHearthstone-JefersonHearthstoneUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89CEFF88E21BFD1BA1719865 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JefersonHearthstone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE6356CF9DEA54A7F70F1ED8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JefersonHearthstone/Pods-JefersonHearthstone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JefersonHearthstone/Pods-JefersonHearthstone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JefersonHearthstone/Pods-JefersonHearthstone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C73E50995EEF321A1C3A8D53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JefersonHearthstoneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F86C36BFE48DE3EBF5CF86A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JefersonHearthstone-JefersonHearthstoneUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41E175222A7EC2890037B92C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41E175612A7EC4460037B92C /* CardCollectionViewCell.swift in Sources */,
+				41E175672A7EC88D0037B92C /* Card.swift in Sources */,
+				41E175702A7EDF860037B92C /* ListCardsRequest+Response.swift in Sources */,
+				41E1757A2A7EF5690037B92C /* UIView+Extension.swift in Sources */,
+				41E1756E2A7ED1E30037B92C /* HttpRestWorker.swift in Sources */,
+				41E175782A7EEAFC0037B92C /* BaseViewController.swift in Sources */,
+				41E1752A2A7EC2890037B92C /* AppDelegate.swift in Sources */,
+				41E175722A7EE2380037B92C /* CardListViewController.swift in Sources */,
+				41E175762A7EE3600037B92C /* CardsListPresenter.swift in Sources */,
+				41E175652A7EC7BF0037B92C /* String+Extension.swift in Sources */,
+				41E175742A7EE2770037B92C /* CardListInteractor.swift in Sources */,
+				41E175692A7ECCC50037B92C /* CardsListView.swift in Sources */,
+				41E1756C2A7ECFD00037B92C /* Endpoints.swift in Sources */,
+				41E1752C2A7EC2890037B92C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E175382A7EC28C0037B92C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41E175412A7EC28C0037B92C /* JefersonHearthstoneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E175422A7EC28C0037B92C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41E1754D2A7EC28C0037B92C /* JefersonHearthstoneUITestsLaunchTests.swift in Sources */,
+				41E1754B2A7EC28C0037B92C /* JefersonHearthstoneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41E1753E2A7EC28C0037B92C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41E175252A7EC2890037B92C /* JefersonHearthstone */;
+			targetProxy = 41E1753D2A7EC28C0037B92C /* PBXContainerItemProxy */;
+		};
+		41E175482A7EC28C0037B92C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41E175252A7EC2890037B92C /* JefersonHearthstone */;
+			targetProxy = 41E175472A7EC28C0037B92C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41E175342A7EC28C0037B92C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41E175352A7EC28C0037B92C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41E1754E2A7EC28C0037B92C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41E1754F2A7EC28C0037B92C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41E175512A7EC28C0037B92C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 089F8144825F0BEDB38058DA /* Pods-JefersonHearthstone.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JefersonHearthstone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeferson.JefersonHearthstone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41E175522A7EC28C0037B92C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9071A3634B57308CF4BA6FA4 /* Pods-JefersonHearthstone.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JefersonHearthstone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeferson.JefersonHearthstone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41E175542A7EC28C0037B92C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27064EE4CD146ADCA519D4B0 /* Pods-JefersonHearthstoneTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeferson.JefersonHearthstoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JefersonHearthstone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JefersonHearthstone";
+			};
+			name = Debug;
+		};
+		41E175552A7EC28C0037B92C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B89A3B110FBEA03696F40508 /* Pods-JefersonHearthstoneTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeferson.JefersonHearthstoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JefersonHearthstone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JefersonHearthstone";
+			};
+			name = Release;
+		};
+		41E175572A7EC28C0037B92C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94B8EE4A1922C4C629CE467D /* Pods-JefersonHearthstone-JefersonHearthstoneUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeferson.JefersonHearthstoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JefersonHearthstone;
+			};
+			name = Debug;
+		};
+		41E175582A7EC28C0037B92C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BDE30EFB5D3BF6611A4FF50 /* Pods-JefersonHearthstone-JefersonHearthstoneUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeferson.JefersonHearthstoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JefersonHearthstone;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41E175212A7EC2890037B92C /* Build configuration list for PBXProject "JefersonHearthstone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E1754E2A7EC28C0037B92C /* Debug */,
+				41E1754F2A7EC28C0037B92C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41E175502A7EC28C0037B92C /* Build configuration list for PBXNativeTarget "JefersonHearthstone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E175512A7EC28C0037B92C /* Debug */,
+				41E175522A7EC28C0037B92C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41E175532A7EC28C0037B92C /* Build configuration list for PBXNativeTarget "JefersonHearthstoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E175542A7EC28C0037B92C /* Debug */,
+				41E175552A7EC28C0037B92C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41E175562A7EC28C0037B92C /* Build configuration list for PBXNativeTarget "JefersonHearthstoneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E175572A7EC28C0037B92C /* Debug */,
+				41E175582A7EC28C0037B92C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41E1751E2A7EC2890037B92C /* Project object */;
+}
