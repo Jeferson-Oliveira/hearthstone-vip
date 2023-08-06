@@ -1,13 +1,8 @@
-/* 
-  Localizable.strings
-  JefersonHearthstone
-
-  Created by Jeferson de Jesus on 05/08/23.
-  
-*/
 "hearth_stone_cards" = "Hearth Stone Cards";
 "search" = "Search";
 "tapToDetail" = "Tap to detail";
 "warning" = "Warning";
 "tryAgain" = "Try Again";
 "ok" = "Ok";
+"back" = "back";
+"description" = "Description";

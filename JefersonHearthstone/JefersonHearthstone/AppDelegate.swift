@@ -19,15 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func startCardsScene() {
-        
-        let presenter = CardsListPresenter()
-        let interactor = CardListInteractor(presenter: presenter)
-        let viewController = CardListViewController(interactor: interactor)
-        presenter.view = viewController
-        
-        let navController = UINavigationController(rootViewController: viewController)
+        let navController = UINavigationController()
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
+        navController.pushViewController(SceneFactory.buildListCardScene(on: navController), animated: true)
     }
 
 }

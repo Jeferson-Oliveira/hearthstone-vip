@@ -15,7 +15,9 @@ protocol CardListDisplayLogic: AnyObject {
 }
 
 class CardListViewController: BaseViewController {
-    var interactor: CardListBusinessLogic
+    
+    let interactor: CardListBusinessLogic
+    let router: CardListRouterProtocol
     
     var viewModel: HeartStoneCards.ListAllCards.ViewModel? {
         didSet {
@@ -23,8 +25,10 @@ class CardListViewController: BaseViewController {
         }
     }
     
-    init(interactor: CardListBusinessLogic) {
+    init(router: CardListRouterProtocol,
+         interactor: CardListBusinessLogic) {
         self.interactor = interactor
+        self.router = router
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -91,10 +95,16 @@ extension CardListViewController: UICollectionViewDataSource, UICollectionViewDe
         cell.setup(with: item)
         return cell
     }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let itemId = viewModel?.cards[indexPath.row].id else { return }
+        router.goToDetails(idCard: itemId)
+    }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         mainView.searchBar.endEditing(true)
     }
+
 }
 
 extension CardListViewController: UISearchBarDelegate {

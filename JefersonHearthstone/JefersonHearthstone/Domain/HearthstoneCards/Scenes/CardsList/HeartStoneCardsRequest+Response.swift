@@ -28,4 +28,27 @@ enum HeartStoneCards {
         }
         
     }
+    
+    enum DetailCard {
+        struct Request {
+            let itemId: String
+        }
+        
+        struct Response {
+            let cardsData: Result<[Card], NetworkError>
+        }
+        
+        struct ViewModel {
+            let name: String?
+            let shortDescription: String?
+            let flavor: String?
+            let imageUrl: URL?
+            let type: String?
+            let faction: String?
+            let cost: String?
+            let atack: String?
+            let health: String? 
+        }
+        
+    }
 }

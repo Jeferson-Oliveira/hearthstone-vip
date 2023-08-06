@@ -12,12 +12,12 @@ struct Card: Codable {
     let dbfID: Int?
     let name, cardSet, type, rarity: String?
     let cost, attack, health: Int?
-    let text, artist, race, playerClass: String?
+    let text, artist, faction, race, playerClass, flavor: String?
     let img: String?
 
     enum CodingKeys: String, CodingKey {
         case cardID = "cardId"
         case dbfID = "dbfId"
-        case name, cardSet, type, rarity, cost, attack, health, text, artist, race, playerClass, img
+        case name, cardSet, type, rarity,faction, cost, attack, health, flavor, text, artist, race, playerClass, img
     }
 }

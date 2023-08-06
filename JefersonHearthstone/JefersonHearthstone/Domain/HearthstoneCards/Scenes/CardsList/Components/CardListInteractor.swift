@@ -14,10 +14,10 @@ protocol CardListBusinessLogic {
 class CardListInteractor: CardListBusinessLogic {
     
     private let apiWorker: APIWorkerProtocol
-    var presenter: ListCardsPresentationLogic?
+    var presenter: CardListPresentationLogic?
     
     init(apiWorker: APIWorkerProtocol = APIWorker(),
-         presenter: ListCardsPresentationLogic) {
+         presenter: CardListPresentationLogic) {
         self.apiWorker = apiWorker
         self.presenter = presenter
     }

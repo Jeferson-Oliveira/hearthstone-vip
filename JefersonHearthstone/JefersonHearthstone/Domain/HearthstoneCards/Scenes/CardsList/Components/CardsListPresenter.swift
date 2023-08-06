@@ -7,30 +7,27 @@
 
 import UIKit
 
-protocol ListCardsPresentationLogic {
+protocol CardListPresentationLogic {
     func showLoading()
     func hideLoading()
-    func showError(message: String)
     func presentCards(response: HeartStoneCards.ListAllCards.Response)
 }
 
-class CardsListPresenter: ListCardsPresentationLogic {
+class CardsListPresenter: CardListPresentationLogic {
     weak var view: CardListDisplayLogic?
     
     func presentCards(response: HeartStoneCards.ListAllCards.Response) {        
         switch response.cardsData {
         case .success(let cards):
-            let mappedCards = cards.map { card in
-                return HeartStoneCards.ListAllCards.CardListItemViewModel(id: card.cardID, name: card.name, imageUrl: URL(string: card.img ?? .empty))
+            let mappedCards = cards.filter { $0.img != nil }.map { card in
+                return HeartStoneCards.ListAllCards.CardListItemViewModel(id: card.cardID,
+                                                                          name: card.name,
+                                                                          imageUrl: URL(string: card.img ?? .empty))
             }
             view?.showCards(viewModel: HeartStoneCards.ListAllCards.ViewModel(cards: mappedCards))
         case .failure(let error):
             view?.showError(message: error.message)
         }
-    }
-    
-    func showError(message: String) {
-        view?.showError(message: message)
     }
     
     func showLoading() {
