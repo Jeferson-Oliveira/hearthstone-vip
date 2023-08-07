@@ -23,13 +23,10 @@ class CardDetailInteractor: CardDetailBusinessLogic {
     }
     
     func fetchCard(request: HeartStoneCards.DetailCard.Request) {
-        presenter?.showLoading()
         apiWorker.getCardDetail(cardId: request.itemId, completion: handlerGetCardsCompletion(_:))
-       
     }
     
     func handlerGetCardsCompletion(_ result: Result<[Card], NetworkError>) {
-        self.presenter?.hideLoading()
-        self.presenter?.presentCards(response: HeartStoneCards.DetailCard.Response(cardsData: result))
+        self.presenter?.presentCardDetail(response: HeartStoneCards.DetailCard.Response(cardsData: result))
     }
 }

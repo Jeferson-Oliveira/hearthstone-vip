@@ -9,18 +9,15 @@ import Foundation
 import UIKit
 
 protocol CardDetailPresentationLogic {
-    func showLoading()
-    func hideLoading()
-    func presentCards(response: HeartStoneCards.DetailCard.Response)
+    func presentCardDetail(response: HeartStoneCards.DetailCard.Response)
 }
 
 class CardDetailPresenter: CardDetailPresentationLogic {
     weak var view: CardDetailDisplayLogic?
     
-    func presentCards(response: HeartStoneCards.DetailCard.Response) {
+    func presentCardDetail(response: HeartStoneCards.DetailCard.Response) {
         switch response.cardsData {
         case .success(let cards):
-            
             let firstCard = cards.first
             let viewModel = HeartStoneCards.DetailCard.ViewModel(name: firstCard?.name,
                                                                  shortDescription: firstCard?.text,
@@ -36,13 +33,5 @@ class CardDetailPresenter: CardDetailPresentationLogic {
         case .failure(let error):
             view?.showError(message: error.message)
         }
-    }
-    
-    func showLoading() {
-        view?.showLoading()
-    }
-    
-    func hideLoading() {
-        view?.hideLoading()
     }
 }

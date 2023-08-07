@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0F5289726E0A96EF68F7AF9B /* Pods_JefersonHearthstoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A6AE79CA1E4F23AACDC3D5 /* Pods_JefersonHearthstoneTests.framework */; };
+		414507462A81AD50006B024C /* CardDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414507452A81AD50006B024C /* CardDetailPresenterTests.swift */; };
+		414507482A81AD70006B024C /* CardDetailSpies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414507472A81AD70006B024C /* CardDetailSpies.swift */; };
+		4145074A2A81AD7C006B024C /* CardListSpies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414507492A81AD7C006B024C /* CardListSpies.swift */; };
+		4145074C2A81B1FE006B024C /* CardDetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4145074B2A81B1FE006B024C /* CardDetailInteractorTests.swift */; };
+		414507512A81B86A006B024C /* JefersonHearthstoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414507502A81B86A006B024C /* JefersonHearthstoneUITests.swift */; };
 		41E1752A2A7EC2890037B92C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175292A7EC2890037B92C /* AppDelegate.swift */; };
 		41E1752C2A7EC2890037B92C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E1752B2A7EC2890037B92C /* SceneDelegate.swift */; };
 		41E175332A7EC28C0037B92C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E175322A7EC28C0037B92C /* Assets.xcassets */; };
 		41E175362A7EC28C0037B92C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E175342A7EC28C0037B92C /* LaunchScreen.storyboard */; };
-		41E175412A7EC28C0037B92C /* JefersonHearthstoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175402A7EC28C0037B92C /* JefersonHearthstoneTests.swift */; };
-		41E1754B2A7EC28C0037B92C /* JefersonHearthstoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E1754A2A7EC28C0037B92C /* JefersonHearthstoneUITests.swift */; };
-		41E1754D2A7EC28C0037B92C /* JefersonHearthstoneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E1754C2A7EC28C0037B92C /* JefersonHearthstoneUITestsLaunchTests.swift */; };
 		41E175612A7EC4460037B92C /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175602A7EC4460037B92C /* CardCollectionViewCell.swift */; };
 		41E175652A7EC7BF0037B92C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175642A7EC7BF0037B92C /* String+Extension.swift */; };
 		41E175672A7EC88D0037B92C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175662A7EC88D0037B92C /* Card.swift */; };
@@ -34,8 +36,15 @@
 		41E1758B2A7F141B0037B92C /* CardDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E1758A2A7F141B0037B92C /* CardDetailPresenter.swift */; };
 		41E1758D2A7F173F0037B92C /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E1758C2A7F173F0037B92C /* SceneFactory.swift */; };
 		41E1758F2A7F28F50037B92C /* CardListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E1758E2A7F28F50037B92C /* CardListRouter.swift */; };
-		879B966CD2A6D6AD6DEF7D3E /* Pods_JefersonHearthstone_JefersonHearthstoneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA089AB3BA6311BFC6A4D40 /* Pods_JefersonHearthstone_JefersonHearthstoneUITests.framework */; };
+		41E175942A818C550037B92C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175932A818C550037B92C /* LoadingView.swift */; };
+		41E175992A8194320037B92C /* CardMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175982A8194320037B92C /* CardMock.swift */; };
+		41E1759B2A8195860037B92C /* CardListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E1759A2A8195860037B92C /* CardListInteractorTests.swift */; };
+		41E1759D2A8195980037B92C /* CardListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E1759C2A8195980037B92C /* CardListPresenterTests.swift */; };
+		41E1759F2A8195A60037B92C /* CardListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E1759E2A8195A60037B92C /* CardListViewControllerTests.swift */; };
+		41E175A32A8195C50037B92C /* CardListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175A22A8195C50037B92C /* CardListRouterTests.swift */; };
+		41E175A52A81A5990037B92C /* CommonSpies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E175A42A81A5990037B92C /* CommonSpies.swift */; };
 		ECB5CB0307BFD39807CCCE55 /* Pods_JefersonHearthstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A3BAB12FFFA217295A33D6 /* Pods_JefersonHearthstone.framework */; };
+		FC494D10C984E8889B8DCC1B /* Pods_JefersonHearthstoneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F17F44410A181E8D23275A /* Pods_JefersonHearthstoneUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +66,13 @@
 
 /* Begin PBXFileReference section */
 		089F8144825F0BEDB38058DA /* Pods-JefersonHearthstone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JefersonHearthstone.debug.xcconfig"; path = "Target Support Files/Pods-JefersonHearthstone/Pods-JefersonHearthstone.debug.xcconfig"; sourceTree = "<group>"; };
-		0EA089AB3BA6311BFC6A4D40 /* Pods_JefersonHearthstone_JefersonHearthstoneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JefersonHearthstone_JefersonHearthstoneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27064EE4CD146ADCA519D4B0 /* Pods-JefersonHearthstoneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JefersonHearthstoneTests.debug.xcconfig"; path = "Target Support Files/Pods-JefersonHearthstoneTests/Pods-JefersonHearthstoneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		36E8E4722505D28C114ABF56 /* Pods-JefersonHearthstoneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JefersonHearthstoneUITests.release.xcconfig"; path = "Target Support Files/Pods-JefersonHearthstoneUITests/Pods-JefersonHearthstoneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		414507452A81AD50006B024C /* CardDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailPresenterTests.swift; sourceTree = "<group>"; };
+		414507472A81AD70006B024C /* CardDetailSpies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailSpies.swift; sourceTree = "<group>"; };
+		414507492A81AD7C006B024C /* CardListSpies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListSpies.swift; sourceTree = "<group>"; };
+		4145074B2A81B1FE006B024C /* CardDetailInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailInteractorTests.swift; sourceTree = "<group>"; };
+		414507502A81B86A006B024C /* JefersonHearthstoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JefersonHearthstoneUITests.swift; sourceTree = "<group>"; };
 		41E175262A7EC2890037B92C /* JefersonHearthstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JefersonHearthstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E175292A7EC2890037B92C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41E1752B2A7EC2890037B92C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,10 +80,7 @@
 		41E175352A7EC28C0037B92C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41E175372A7EC28C0037B92C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41E1753C2A7EC28C0037B92C /* JefersonHearthstoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JefersonHearthstoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		41E175402A7EC28C0037B92C /* JefersonHearthstoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JefersonHearthstoneTests.swift; sourceTree = "<group>"; };
 		41E175462A7EC28C0037B92C /* JefersonHearthstoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JefersonHearthstoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		41E1754A2A7EC28C0037B92C /* JefersonHearthstoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JefersonHearthstoneUITests.swift; sourceTree = "<group>"; };
-		41E1754C2A7EC28C0037B92C /* JefersonHearthstoneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JefersonHearthstoneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		41E175602A7EC4460037B92C /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		41E175642A7EC7BF0037B92C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		41E175662A7EC88D0037B92C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
@@ -91,9 +102,18 @@
 		41E1758A2A7F141B0037B92C /* CardDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailPresenter.swift; sourceTree = "<group>"; };
 		41E1758C2A7F173F0037B92C /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
 		41E1758E2A7F28F50037B92C /* CardListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListRouter.swift; sourceTree = "<group>"; };
+		41E175932A818C550037B92C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		41E175982A8194320037B92C /* CardMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMock.swift; sourceTree = "<group>"; };
+		41E1759A2A8195860037B92C /* CardListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListInteractorTests.swift; sourceTree = "<group>"; };
+		41E1759C2A8195980037B92C /* CardListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListPresenterTests.swift; sourceTree = "<group>"; };
+		41E1759E2A8195A60037B92C /* CardListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewControllerTests.swift; sourceTree = "<group>"; };
+		41E175A22A8195C50037B92C /* CardListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListRouterTests.swift; sourceTree = "<group>"; };
+		41E175A42A81A5990037B92C /* CommonSpies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSpies.swift; sourceTree = "<group>"; };
+		4FBEC196D2232AD5F9FABBE9 /* Pods-JefersonHearthstoneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JefersonHearthstoneUITests.debug.xcconfig"; path = "Target Support Files/Pods-JefersonHearthstoneUITests/Pods-JefersonHearthstoneUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9071A3634B57308CF4BA6FA4 /* Pods-JefersonHearthstone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JefersonHearthstone.release.xcconfig"; path = "Target Support Files/Pods-JefersonHearthstone/Pods-JefersonHearthstone.release.xcconfig"; sourceTree = "<group>"; };
 		94B8EE4A1922C4C629CE467D /* Pods-JefersonHearthstone-JefersonHearthstoneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JefersonHearthstone-JefersonHearthstoneUITests.debug.xcconfig"; path = "Target Support Files/Pods-JefersonHearthstone-JefersonHearthstoneUITests/Pods-JefersonHearthstone-JefersonHearthstoneUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9BDE30EFB5D3BF6611A4FF50 /* Pods-JefersonHearthstone-JefersonHearthstoneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JefersonHearthstone-JefersonHearthstoneUITests.release.xcconfig"; path = "Target Support Files/Pods-JefersonHearthstone-JefersonHearthstoneUITests/Pods-JefersonHearthstone-JefersonHearthstoneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A9F17F44410A181E8D23275A /* Pods_JefersonHearthstoneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JefersonHearthstoneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89A3B110FBEA03696F40508 /* Pods-JefersonHearthstoneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JefersonHearthstoneTests.release.xcconfig"; path = "Target Support Files/Pods-JefersonHearthstoneTests/Pods-JefersonHearthstoneTests.release.xcconfig"; sourceTree = "<group>"; };
 		C3A3BAB12FFFA217295A33D6 /* Pods_JefersonHearthstone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JefersonHearthstone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A6AE79CA1E4F23AACDC3D5 /* Pods_JefersonHearthstoneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JefersonHearthstoneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,13 +140,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				879B966CD2A6D6AD6DEF7D3E /* Pods_JefersonHearthstone_JefersonHearthstoneUITests.framework in Frameworks */,
+				FC494D10C984E8889B8DCC1B /* Pods_JefersonHearthstoneUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		414507442A81AD22006B024C /* CardDetail */ = {
+			isa = PBXGroup;
+			children = (
+				414507472A81AD70006B024C /* CardDetailSpies.swift */,
+				414507452A81AD50006B024C /* CardDetailPresenterTests.swift */,
+				4145074B2A81B1FE006B024C /* CardDetailInteractorTests.swift */,
+			);
+			path = CardDetail;
+			sourceTree = "<group>";
+		};
 		41E1751D2A7EC2890037B92C = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +194,8 @@
 		41E1753F2A7EC28C0037B92C /* JefersonHearthstoneTests */ = {
 			isa = PBXGroup;
 			children = (
-				41E175402A7EC28C0037B92C /* JefersonHearthstoneTests.swift */,
+				41E175972A8194200037B92C /* Util */,
+				41E175952A81939A0037B92C /* Scenes */,
 			);
 			path = JefersonHearthstoneTests;
 			sourceTree = "<group>";
@@ -172,8 +203,7 @@
 		41E175492A7EC28C0037B92C /* JefersonHearthstoneUITests */ = {
 			isa = PBXGroup;
 			children = (
-				41E1754A2A7EC28C0037B92C /* JefersonHearthstoneUITests.swift */,
-				41E1754C2A7EC28C0037B92C /* JefersonHearthstoneUITestsLaunchTests.swift */,
+				414507502A81B86A006B024C /* JefersonHearthstoneUITests.swift */,
 			);
 			path = JefersonHearthstoneUITests;
 			sourceTree = "<group>";
@@ -219,6 +249,12 @@
 		41E1755D2A7EC3DA0037B92C /* CardsList */ = {
 			isa = PBXGroup;
 			children = (
+				41E175602A7EC4460037B92C /* CardCollectionViewCell.swift */,
+				41E175682A7ECCC50037B92C /* CardsListView.swift */,
+				41E175712A7EE2380037B92C /* CardListViewController.swift */,
+				41E175732A7EE2770037B92C /* CardListInteractor.swift */,
+				41E175752A7EE3600037B92C /* CardsListPresenter.swift */,
+				41E1758E2A7F28F50037B92C /* CardListRouter.swift */,
 				41E1755F2A7EC4120037B92C /* Components */,
 				41E1756F2A7EDF860037B92C /* HeartStoneCardsRequest+Response.swift */,
 			);
@@ -229,8 +265,8 @@
 			isa = PBXGroup;
 			children = (
 				41E175842A7F13F90037B92C /* CardDetailView.swift */,
-				41E175882A7F140F0037B92C /* CardDetailInteractor.swift */,
 				41E175862A7F14040037B92C /* CardDetailViewController.swift */,
+				41E175882A7F140F0037B92C /* CardDetailInteractor.swift */,
 				41E1758A2A7F141B0037B92C /* CardDetailPresenter.swift */,
 			);
 			path = CardDetail;
@@ -239,12 +275,6 @@
 		41E1755F2A7EC4120037B92C /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				41E175602A7EC4460037B92C /* CardCollectionViewCell.swift */,
-				41E175682A7ECCC50037B92C /* CardsListView.swift */,
-				41E175712A7EE2380037B92C /* CardListViewController.swift */,
-				41E175732A7EE2770037B92C /* CardListInteractor.swift */,
-				41E175752A7EE3600037B92C /* CardsListPresenter.swift */,
-				41E1758E2A7F28F50037B92C /* CardListRouter.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -253,8 +283,8 @@
 			isa = PBXGroup;
 			children = (
 				41E1757B2A7F0CC50037B92C /* SupportingFiles */,
+				41E175902A818BB30037B92C /* Components */,
 				41E175632A7EC7AE0037B92C /* Extension */,
-				41E175772A7EEAFC0037B92C /* BaseViewController.swift */,
 				41E1758C2A7F173F0037B92C /* SceneFactory.swift */,
 			);
 			path = Common;
@@ -277,12 +307,51 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		41E175902A818BB30037B92C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				41E175772A7EEAFC0037B92C /* BaseViewController.swift */,
+				41E175932A818C550037B92C /* LoadingView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		41E175952A81939A0037B92C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				414507442A81AD22006B024C /* CardDetail */,
+				41E175962A8194170037B92C /* CardList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		41E175962A8194170037B92C /* CardList */ = {
+			isa = PBXGroup;
+			children = (
+				414507492A81AD7C006B024C /* CardListSpies.swift */,
+				41E1759A2A8195860037B92C /* CardListInteractorTests.swift */,
+				41E1759C2A8195980037B92C /* CardListPresenterTests.swift */,
+				41E1759E2A8195A60037B92C /* CardListViewControllerTests.swift */,
+				41E175A22A8195C50037B92C /* CardListRouterTests.swift */,
+			);
+			path = CardList;
+			sourceTree = "<group>";
+		};
+		41E175972A8194200037B92C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				41E175982A8194320037B92C /* CardMock.swift */,
+				41E175A42A81A5990037B92C /* CommonSpies.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		543575B9AA42E35509C53366 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				C3A3BAB12FFFA217295A33D6 /* Pods_JefersonHearthstone.framework */,
 				D5A6AE79CA1E4F23AACDC3D5 /* Pods_JefersonHearthstoneTests.framework */,
-				0EA089AB3BA6311BFC6A4D40 /* Pods_JefersonHearthstone_JefersonHearthstoneUITests.framework */,
+				A9F17F44410A181E8D23275A /* Pods_JefersonHearthstoneUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -296,6 +365,8 @@
 				B89A3B110FBEA03696F40508 /* Pods-JefersonHearthstoneTests.release.xcconfig */,
 				94B8EE4A1922C4C629CE467D /* Pods-JefersonHearthstone-JefersonHearthstoneUITests.debug.xcconfig */,
 				9BDE30EFB5D3BF6611A4FF50 /* Pods-JefersonHearthstone-JefersonHearthstoneUITests.release.xcconfig */,
+				4FBEC196D2232AD5F9FABBE9 /* Pods-JefersonHearthstoneUITests.debug.xcconfig */,
+				36E8E4722505D28C114ABF56 /* Pods-JefersonHearthstoneUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -330,7 +401,7 @@
 				41E175382A7EC28C0037B92C /* Sources */,
 				41E175392A7EC28C0037B92C /* Frameworks */,
 				41E1753A2A7EC28C0037B92C /* Resources */,
-				3AF5EC893CE56CB388596433 /* [CP] Embed Pods Frameworks */,
+				6D8B1403885F7673506CCBCC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -350,7 +421,6 @@
 				41E175422A7EC28C0037B92C /* Sources */,
 				41E175432A7EC28C0037B92C /* Frameworks */,
 				41E175442A7EC28C0037B92C /* Resources */,
-				61BAAC720B880DEA64CAEC9F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -381,6 +451,7 @@
 					};
 					41E175452A7EC28C0037B92C = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 						TestTargetID = 41E175252A7EC2890037B92C;
 					};
 				};
@@ -434,7 +505,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3AF5EC893CE56CB388596433 /* [CP] Embed Pods Frameworks */ = {
+		6D8B1403885F7673506CCBCC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -449,23 +520,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JefersonHearthstoneTests/Pods-JefersonHearthstoneTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		61BAAC720B880DEA64CAEC9F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JefersonHearthstone-JefersonHearthstoneUITests/Pods-JefersonHearthstone-JefersonHearthstoneUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JefersonHearthstone-JefersonHearthstoneUITests/Pods-JefersonHearthstone-JefersonHearthstoneUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JefersonHearthstone-JefersonHearthstoneUITests/Pods-JefersonHearthstone-JefersonHearthstoneUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		89CEFF88E21BFD1BA1719865 /* [CP] Check Pods Manifest.lock */ = {
@@ -544,7 +598,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JefersonHearthstone-JefersonHearthstoneUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-JefersonHearthstoneUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -563,6 +617,7 @@
 				41E1758F2A7F28F50037B92C /* CardListRouter.swift in Sources */,
 				41E175672A7EC88D0037B92C /* Card.swift in Sources */,
 				41E175702A7EDF860037B92C /* HeartStoneCardsRequest+Response.swift in Sources */,
+				41E175942A818C550037B92C /* LoadingView.swift in Sources */,
 				41E1757A2A7EF5690037B92C /* UIView+Extension.swift in Sources */,
 				41E1756E2A7ED1E30037B92C /* HttpRestWorker.swift in Sources */,
 				41E175892A7F140F0037B92C /* CardDetailInteractor.swift in Sources */,
@@ -585,7 +640,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41E175412A7EC28C0037B92C /* JefersonHearthstoneTests.swift in Sources */,
+				41E1759D2A8195980037B92C /* CardListPresenterTests.swift in Sources */,
+				4145074C2A81B1FE006B024C /* CardDetailInteractorTests.swift in Sources */,
+				414507462A81AD50006B024C /* CardDetailPresenterTests.swift in Sources */,
+				4145074A2A81AD7C006B024C /* CardListSpies.swift in Sources */,
+				41E175992A8194320037B92C /* CardMock.swift in Sources */,
+				41E175A32A8195C50037B92C /* CardListRouterTests.swift in Sources */,
+				414507482A81AD70006B024C /* CardDetailSpies.swift in Sources */,
+				41E175A52A81A5990037B92C /* CommonSpies.swift in Sources */,
+				41E1759B2A8195860037B92C /* CardListInteractorTests.swift in Sources */,
+				41E1759F2A8195A60037B92C /* CardListViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,8 +657,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41E1754D2A7EC28C0037B92C /* JefersonHearthstoneUITestsLaunchTests.swift in Sources */,
-				41E1754B2A7EC28C0037B92C /* JefersonHearthstoneUITests.swift in Sources */,
+				414507512A81B86A006B024C /* JefersonHearthstoneUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -853,9 +916,10 @@
 		};
 		41E175572A7EC28C0037B92C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94B8EE4A1922C4C629CE467D /* Pods-JefersonHearthstone-JefersonHearthstoneUITests.debug.xcconfig */;
+			baseConfigurationReference = 4FBEC196D2232AD5F9FABBE9 /* Pods-JefersonHearthstoneUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -863,6 +927,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeferson.JefersonHearthstoneUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = JefersonHearthstone;
@@ -871,9 +936,10 @@
 		};
 		41E175582A7EC28C0037B92C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BDE30EFB5D3BF6611A4FF50 /* Pods-JefersonHearthstone-JefersonHearthstoneUITests.release.xcconfig */;
+			baseConfigurationReference = 36E8E4722505D28C114ABF56 /* Pods-JefersonHearthstoneUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

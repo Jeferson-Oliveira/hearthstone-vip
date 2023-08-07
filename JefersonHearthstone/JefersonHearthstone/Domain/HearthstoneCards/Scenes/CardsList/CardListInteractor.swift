@@ -23,7 +23,6 @@ class CardListInteractor: CardListBusinessLogic {
     }
     
     func getCards(request: HeartStoneCards.ListAllCards.Request) {
-        presenter?.showLoading()
         if request.name.isEmpty{
             apiWorker.getCards(completion: handlerGetCardsCompletion(_:))
         } else {
@@ -31,8 +30,7 @@ class CardListInteractor: CardListBusinessLogic {
         }
     }
     
-    func handlerGetCardsCompletion(_ result: Result<[Card], NetworkError>) {
-        self.presenter?.hideLoading()
+    private func handlerGetCardsCompletion(_ result: Result<[Card], NetworkError>) {
         self.presenter?.presentCards(response: HeartStoneCards.ListAllCards.Response(cardsData: result))
     }
 }

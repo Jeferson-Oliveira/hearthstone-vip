@@ -8,8 +8,6 @@
 import Foundation
 
 protocol CardDetailDisplayLogic: AnyObject {
-    func showLoading()
-    func hideLoading()
     func showError(message: String)
     func showCard(viewModel: HeartStoneCards.DetailCard.ViewModel)
 }
@@ -48,6 +46,7 @@ class CardDetailViewController: BaseViewController {
     }
     
     private func fetchCard() {
+        showLoadingView()
         interactor.fetchCard(request: HeartStoneCards.DetailCard.Request(itemId: cardId))
     }
  
@@ -55,19 +54,13 @@ class CardDetailViewController: BaseViewController {
 
 // MARK: Presenter protocol
 extension CardDetailViewController: CardDetailDisplayLogic {
-    func showLoading() {
-        //mainView.collectionView.refreshControl?.beginRefreshing()
-    }
-    
-    func hideLoading() {
-        //mainView.collectionView.refreshControl?.endRefreshing()
-    }
-    
     func showError(message: String) {
+        hideLoadingView()
         presentError(message: message, tryAgainCallback: fetchCard)
     }
     
-    func showCard(viewModel: HeartStoneCards.DetailCard.ViewModel){
+    func showCard(viewModel: HeartStoneCards.DetailCard.ViewModel) {
         mainView.updateViewData(with: viewModel)
+        hideLoadingView()
     }
 }

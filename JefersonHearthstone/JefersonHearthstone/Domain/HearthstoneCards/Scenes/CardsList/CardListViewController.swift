@@ -8,8 +8,6 @@
 import UIKit
 
 protocol CardListDisplayLogic: AnyObject {
-    func showLoading()
-    func hideLoading()
     func showError(message: String)
     func showCards(viewModel: HeartStoneCards.ListAllCards.ViewModel)
 }
@@ -56,7 +54,8 @@ class CardListViewController: BaseViewController {
         mainView.fitAllConstraints(on: view)
     }
     
-    private func fetchCards() {
+    func fetchCards() {
+        showLoadingView()
         interactor.getCards(request: HeartStoneCards.ListAllCards.Request(name: mainView.searchBar.text ?? .empty))
     }
  
@@ -64,20 +63,14 @@ class CardListViewController: BaseViewController {
 
 // MARK: Presenter protocol
 extension CardListViewController: CardListDisplayLogic {
-    func showLoading() {
-        mainView.collectionView.refreshControl?.beginRefreshing()
-    }
-    
-    func hideLoading() {
-        mainView.collectionView.refreshControl?.endRefreshing()
-    }
-    
     func showError(message: String) {
+        hideLoadingView()
         presentError(message: message, tryAgainCallback: fetchCards)
     }
     
     func showCards(viewModel: HeartStoneCards.ListAllCards.ViewModel) {
         self.viewModel = viewModel
+        hideLoadingView()
     }
 }
 

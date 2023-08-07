@@ -8,8 +8,6 @@
 import UIKit
 
 protocol CardListPresentationLogic {
-    func showLoading()
-    func hideLoading()
     func presentCards(response: HeartStoneCards.ListAllCards.Response)
 }
 
@@ -28,13 +26,5 @@ class CardsListPresenter: CardListPresentationLogic {
         case .failure(let error):
             view?.showError(message: error.message)
         }
-    }
-    
-    func showLoading() {
-        view?.showLoading()
-    }
-    
-    func hideLoading() {
-        view?.hideLoading()
     }
 }
