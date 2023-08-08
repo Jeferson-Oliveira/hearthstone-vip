@@ -38,7 +38,10 @@ class CardDetailPresenterTests: XCTestCase {
         sut?.presentCardDetail(response: HeartStoneCards.DetailCard.Response(cardsData: mockError))
         XCTAssertFalse(viewSpy.showCardCalled)
         XCTAssertTrue(viewSpy.showErrorCalled)
-        
+    }
+    
+    func testShouldFormatDetailValueCorrectly() {
+        XCTAssertEqual(sut?.formatItemDescription("Atack", "10"), "Atack: 10")
     }
     
 }

@@ -23,15 +23,19 @@ class CardDetailPresenter: CardDetailPresentationLogic {
                                                                  shortDescription: firstCard?.text,
                                                                  flavor: firstCard?.flavor,
                                                                  imageUrl: URL(string: firstCard?.img ?? .empty),
-                                                                 type: firstCard?.type,
-                                                                 faction: firstCard?.faction,
-                                                                 cost: firstCard?.cost?.description,
-                                                                 atack: firstCard?.attack?.description,
-                                                                 health: firstCard?.health?.description)
+                                                                 type: formatItemDescription("type".localizable(), firstCard?.type),
+                                                                 faction: formatItemDescription("faction".localizable(), firstCard?.faction),
+                                                                 cost: formatItemDescription("cost".localizable(), firstCard?.cost?.description),
+                                                                 atack: formatItemDescription("atack".localizable(), firstCard?.attack?.description),
+                                                                 health: formatItemDescription("health".localizable(), firstCard?.health?.description))
             
             view?.showCard(viewModel: viewModel)
         case .failure(let error):
             view?.showError(message: error.message)
         }
+    }
+    
+    func formatItemDescription(_ name: String,_ value: String?) -> String {
+        return "\(name): \(value ?? .empty)"
     }
 }

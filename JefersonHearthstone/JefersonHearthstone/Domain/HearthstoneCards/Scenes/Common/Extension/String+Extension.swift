@@ -10,7 +10,7 @@ import Foundation
 extension String {
     static let empty = ""
     
-    func localizable() -> String? {
+    func localizable() -> String {
         return NSLocalizedString(self, comment: self)
     }
 }

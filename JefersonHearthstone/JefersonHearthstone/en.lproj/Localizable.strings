@@ -7,3 +7,8 @@
 "back" = "back";
 "description" = "Description";
 "loading" = "Loading...";
+"type" = "Type";
+"faction" = "Faction";
+"cost" = "Cost";
+"atack" = "Atack";
+"health" = "Health";

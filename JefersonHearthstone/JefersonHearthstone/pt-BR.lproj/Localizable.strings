@@ -7,3 +7,9 @@
 "back" = "Voltar";
 "description" = "Descrição";
 "loading" = "Carregando...";
+"type" = "Tipo";
+"faction" = "Facção";
+"cost" = "Custo";
+"atack" = "Ataque";
+"health" = "Saúde";
+
