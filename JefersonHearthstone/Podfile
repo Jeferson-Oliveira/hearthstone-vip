@@ -1,0 +1,17 @@
+platform :ios, '13.0'
+
+target 'JefersonHearthstone' do
+  use_frameworks!
+
+  pod 'Kingfisher', '~> 6.1.1'
+  pod 'Alamofire', '~> 5.4.2'
+
+  target 'JefersonHearthstoneTests' do
+    inherit! :search_paths
+  end
+
+  target 'JefersonHearthstoneUITests' do
+    inherit! :search_paths
+  end
+
+end
